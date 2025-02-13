@@ -22,8 +22,7 @@
   <parent>
     <groupId>com.github.felfert</groupId>
     <artifactId>jclouds-backports</artifactId>
-    <version>1.0</version>
-    <relativePath>./parent/</relativePath>
+    <version>2.5.1</version>
   </parent>
 
   <groupId>com.github.felfert</groupId>
