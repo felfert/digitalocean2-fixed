@@ -27,7 +27,7 @@
 
   <groupId>com.github.felfert</groupId>
   <artifactId>digitalocean2-fixed</artifactId>
-  <version>2.5.1</version>
+  <version>2.5.2-SNAPSHOT</version>
   <name>jclouds DigitalOcean v2 API Provider</name>
   <description>jclouds provider for Digital Ocean v2 Compute API, with backported fixes</description>
 
@@ -35,7 +35,7 @@
     <connection>scm:git:https://github.com/felfert/digitalocean2-fixed.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/felfert/digitalocean2-fixed.git</developerConnection>
     <url>https://github.com/felfert/digitalocean2-fixed</url>
-    <tag>digitalocean2-fixed-2.5.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
