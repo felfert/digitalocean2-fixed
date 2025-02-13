@@ -21,17 +21,28 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.jclouds</groupId>
-    <artifactId>jclouds-project</artifactId>
-    <version>2.5.0</version>
+    <groupId>com.github.felfert</groupId>
+    <artifactId>jclouds-backports</artifactId>
+    <version>1.0</version>
+    <relativePath>./parent/</relativePath>
   </parent>
 
   <groupId>com.github.felfert</groupId>
   <artifactId>digitalocean2-fixed</artifactId>
+  <version>2.5.0-SNAPSHOT</version>
   <name>jclouds DigitalOcean v2 API Provider</name>
   <description>jclouds provider for Digital Ocean v2 Compute API, with backported fixes</description>
 
+  <scm>
+    <connection>scm:git:https://github.com/felfert/digitalocean2-fixed.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/felfert/digitalocean2-fixed.git</developerConnection>
+    <url>https://github.com/felfert/digitalocean2-fixed</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
+    <!-- The original upstream version (Against which we build) -->
+    <orig.version>2.5.0</orig.version>
     <test.digitalocean2.endpoint>https://api.digitalocean.com/v2/</test.digitalocean2.endpoint>
     <test.digitalocean2.api-version>2</test.digitalocean2.api-version>
     <test.digitalocean2.identity>FIXME</test.digitalocean2.identity>
@@ -43,50 +54,50 @@
     <dependency>
       <groupId>org.apache.jclouds</groupId>
       <artifactId>jclouds-core</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.api</groupId>
       <artifactId>oauth</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
       <type>jar</type>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.api</groupId>
       <artifactId>oauth</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds</groupId>
       <artifactId>jclouds-compute</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds</groupId>
       <artifactId>jclouds-compute</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds</groupId>
       <artifactId>jclouds-core</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.driver</groupId>
       <artifactId>jclouds-slf4j</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.driver</groupId>
       <artifactId>jclouds-sshj</artifactId>
-      <version>${project.version}</version>
+      <version>${orig.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
